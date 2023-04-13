@@ -8,12 +8,12 @@ function palindrome(str){
 			newStr += str[i];
 		}
 	}
-	let left = 0, right = str.length - 1;
+	let left = 0, right = newStr.length - 1;
 	while (left < right) {
 		if(newStr[left] != newStr[right]){
 			return false;
 		}
-		left6++;
+		left++;
 		right--;
 	}
 	return true;
